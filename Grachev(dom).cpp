@@ -71,7 +71,8 @@ int main()
 	total3 = total2 + total1;
 	cout << "Общай сумма : " << total3 << endl;
 	// добавить в заказ
-	cwhile (true)
+	
+	while (true)
 	{
 		cout << "Заказать еще?\n да - 1 /нет - 2" << endl;
 		cin >> YesNo; cout << endl;
