@@ -71,8 +71,14 @@ int main()
 	total3 = total2 + total1;
 	cout << "Общай сумма : " << total3 << endl;
 	// добавить в заказ
-	cout << "Заказать еще?\n да/нет" << endl; 
-	cin >> YesNo; cout << endl;
+	cwhile (true)
+	{
+		cout << "Заказать еще?\n да - 1 /нет - 2" << endl;
+		cin >> YesNo; cout << endl;
+		if (YesNo == 1 || YesNo == 2)
+			break;
+		cout << "неверный ввод" << endl;
+	}
 	switch (YesNo)
 	{
 	case 1:
